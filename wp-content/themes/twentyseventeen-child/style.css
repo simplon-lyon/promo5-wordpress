@@ -1,0 +1,16 @@
+/*
+Theme Name: Simplon Theme
+Template: twentyseventeen
+*/
+
+h1 {
+    color: red;
+}
+
+.left-side {
+    float:left;
+}
+
+.right-side {
+    width: 50%;
+}
