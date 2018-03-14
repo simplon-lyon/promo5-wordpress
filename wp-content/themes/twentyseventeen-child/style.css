@@ -14,3 +14,15 @@ h1 {
 .right-side {
     width: 50%;
 }
+
+.dog-list {
+    display:flex;
+    width: 100%;
+}
+
+.dog-list article {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
