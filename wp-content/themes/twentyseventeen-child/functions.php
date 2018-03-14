@@ -9,4 +9,25 @@ function my_theme_enqueue_styles() {
 
 }
 
+function page_widget_init() {
+
+	register_sidebar( array(
+		'name'          => 'Page Bottom Widget',
+		'id'            => 'widget_page_bottom',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'page_widget_init' );
+
+function liste_widget_register() {
+    include 'widgets/liste-projet.php';
+    register_widget( 'Liste_Projet' );
+}
+
+add_action('widgets_init', 'liste_widget_register');
+
 ?>
